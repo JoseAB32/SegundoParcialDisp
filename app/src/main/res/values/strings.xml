@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SegundoParcial</string>
+    <string name="libro_campo">Ingrese Nombre Del Libro</string>
+    <string name="btn_buscar">Buscar Libro</string>
+    <string name="btn_verGustados">Libros Guardados</string>
+    <string name="titulo_buscar">MIS LIBROS</string>
+</resources>
