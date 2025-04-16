@@ -12,9 +12,9 @@ import java.time.LocalDateTime
 data class LibroGustado(
     @ColumnInfo(name = "titulo")
     var titulo: String,
-    @ColumnInfo(name = "titulo")
+    @ColumnInfo(name = "autores")
     var autores: List<String>,
-    @ColumnInfo(name = "titulo")
+    @ColumnInfo(name = "anio")
     var anio: Int
 ) {
     @PrimaryKey(autoGenerate = true)

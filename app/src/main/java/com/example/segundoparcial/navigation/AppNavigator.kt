@@ -10,7 +10,7 @@ import com.example.segundoparcial.librodetail.LibroDetailUI
 import com.example.segundoparcial.listamegusta.ListaMeGustaUI
 
 @Composable
-fun AppNavigation() {
+fun AppNavigator() {
     val navController = rememberNavController()
 
     NavHost(

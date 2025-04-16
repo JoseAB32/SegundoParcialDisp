@@ -4,8 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 
 @Database(entities = [LibroGustado::class], version = 1, exportSchema = false)
+@TypeConverters(Converters::class)
 abstract class AppRoomDatabase : RoomDatabase() {
     abstract fun LibroDao(): ILibroGustadoDAO
 
