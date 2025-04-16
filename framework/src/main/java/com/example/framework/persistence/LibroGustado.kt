@@ -15,7 +15,7 @@ data class LibroGustado(
     @ColumnInfo(name = "autores")
     var autores: List<String>,
     @ColumnInfo(name = "anio")
-    var anio: Int
+    var anio: Int?
 ) {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")

@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 data class Libro(
     val titulo: String,
     val autores: List<String>,
-    val anio: Int,
+    val anio: Int?,
     val MeGusta: Boolean
 ) {
 }

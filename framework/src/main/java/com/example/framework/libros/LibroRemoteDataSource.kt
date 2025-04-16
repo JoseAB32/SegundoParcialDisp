@@ -10,6 +10,7 @@ class LibroRemoteDataSource (
     val retrofitBuilder: RetrofitBuilder
 ): ILibroRemoteDataSource{
     override suspend fun fetch(titulo: String): NetworkResult<List<Libro>> {
+        println("------------------------")
         val response = retrofitBuilder.apiService.getLibros(titulo)
         if(response.isSuccessful){
             return NetworkResult.Success(response.body()!!.results.map { it.toModel() })

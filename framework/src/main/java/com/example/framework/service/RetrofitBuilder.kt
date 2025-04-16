@@ -25,6 +25,6 @@ class RetrofitBuilder(
     val apiService: IApiService = getRetrofit(BASE_URL).create(IApiService::class.java)
 
     companion object {
-        private const val BASE_URL = "https://openlibrary.org/"
+        private const val BASE_URL = "https://openlibrary.org"
     }
 }

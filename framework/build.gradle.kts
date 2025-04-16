@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.ucb.framework"
+    namespace = "com.example.framework"
     compileSdk = 34
 
     defaultConfig {

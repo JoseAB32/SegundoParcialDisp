@@ -6,11 +6,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.segundoparcial.buscador.BuscadorUI
 import com.example.segundoparcial.navigation.Screens
-import com.example.segundoparcial.librodetail.LibroDetailUI
-import com.example.segundoparcial.listamegusta.ListaMeGustaUI
+import com.example.segundoparcial.buscador.LibroGustadosUI
 
 @Composable
-fun AppNavigator() {
+fun AppNavigation() {
     val navController = rememberNavController()
 
     NavHost(
@@ -22,24 +21,11 @@ fun AppNavigator() {
         popExitTransition = { ExitTransition.None }
     ) {
         composable(Screens.BuscadorScreen.route) {
-            BuscadorUI(
-                onClick = {
-                    navController.navigate(Screens.BookDetailScreen.route)
-                },
-                onClick2 = {
-                    navController.navigate(Screens.ListaMeGustaScreen.route)
-                }
-            )
+            BuscadorUI()
         }
-        composable(Screens.BookDetailScreen.route) {
-            LibroDetailUI(
-                onBackPressed = {
-                    navController.popBackStack()
-                }
-            )
-        }
-        composable(Screens.ListaMeGustaScreen.route) {
-            ListaMeGustaUI(
+
+        composable(Screens.LibroGustadosUI.route) {
+            LibroGustadosUI(
                 onBackPressed = {
                     navController.popBackStack()
                 }

@@ -7,6 +7,7 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface IApiService {
-    @GET("search.json")
-    suspend fun getLibros(@Query("q") titulo: String): Response<LibroResponseDto>
+    @GET("/search.json")
+    //@Query("q") titulo: String
+    suspend fun getLibros(@Query("q") title: String): Response<LibroResponseDto>
 }

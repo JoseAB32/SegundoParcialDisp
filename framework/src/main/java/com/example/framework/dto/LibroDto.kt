@@ -10,6 +10,6 @@ class LibroDto (
     @Json(name = "titulo")
     val title: String,
     @Json(name = "anio")
-    val anio: Int
+    val anio: Int?
 ){
 }
